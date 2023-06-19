@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastPay"
+        android:textSize="45sp"
+        android:textColor="#FFC107"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFD"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/Receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/Sender"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Receiver"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#100F0F"
+        android:textSize="25sp"
+        android:background="#FFC107"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/SendMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_money"
+        android:textSize="15sp"
+        android:layout_below="@id/editAmount"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

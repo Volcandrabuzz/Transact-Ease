@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app"
+        android:label="@string/transact_ease"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoneyTransferApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".transaction_track"
+            android:exported="false" />
+
+        <activity
+            android:name=".lottiesplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".listprep"
+            android:exported="true"
+            android:label="Sender" />
+        <activity
+            android:name=".listprep2"
+            android:exported="true"
+            android:label="Receiver" />
+        <activity
+            android:name=".transaction"
+            android:exported="true"
+            android:label="Transaction Page" />
+        <activity
+            android:name=".tickscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+    </application>
+
+</manifest>

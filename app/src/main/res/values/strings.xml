@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Money Transfer Application</string>
+    <string name="money_transfer_app">SAFE MONEY TRANSFER</string>
+    <string name="transact_ease">Transact Ease</string>
+    <string name="view_all_customers">View Customers</string>
+    <string name="transaction_track_record">Transaction Track</string>
+    <string name="pay">Pay</string>
+    <string name="transaction">Transaction</string>
+    <string name="sender">"Sender: "</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="send_money">Send Money</string>
+    <string name="lastPay">Transaction</string>
+    <string name="receiver">Receiver:</string>
+    <string name="sender_1">Sender:</string>
+    <string name="transaction_succeeded">Transaction Succeeded</string>
+</resources>
